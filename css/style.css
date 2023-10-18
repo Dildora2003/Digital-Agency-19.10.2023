@@ -122,7 +122,7 @@ header {
 #Branding {
   padding-bottom: 12rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 2.4rem;
 }
 .Branding-text {
@@ -305,10 +305,15 @@ footer {
   .navbar .nav-bars {
     display: none;
   }
-  #Branding {
+
+  main #Branding:nth-child(2) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  #Branding {
+    display: flex;
+    flex-direction: row-reverse;
   }
   .Branding-text a i {
     transform: rotate(-90deg);
