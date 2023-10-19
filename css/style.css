@@ -94,9 +94,10 @@ header {
 /* Section 1 imgs */
 
 #Imgs {
-  max-width: 38rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
   padding-bottom: 8.8rem;
 }
 #Imgs p {
@@ -107,9 +108,8 @@ header {
 .box-imgs {
   max-width: 38rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
+  flex-direction: row;
+  gap: 3rem;
   border-radius: 0.8rem;
   background: #f6f6f6;
   padding: 3.1rem 1.6rem;
@@ -303,13 +303,11 @@ footer {
   .navbar .nav-bars {
     display: none;
   }
-
-  #Imgs {
-    max-width: 64rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .box-imgs {
+    max-width: 68rem;
+    display: flex;
+    gap: 5rem;
   }
-
   main #Branding:nth-child(2) {
     flex-direction: row;
     align-items: center;
@@ -362,13 +360,11 @@ footer {
   }
   .box-imgs {
     max-width: 91.5rem;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
   }
-  #Imgs {
-    max-width: 99rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+
   .Branding-text {
     align-items: start;
   }
