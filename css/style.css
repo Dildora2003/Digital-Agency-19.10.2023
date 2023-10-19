@@ -94,10 +94,9 @@ header {
 /* Section 1 imgs */
 
 #Imgs {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 1.6rem;
+  max-width: 38rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding-bottom: 8.8rem;
 }
 #Imgs p {
@@ -305,6 +304,12 @@ footer {
     display: none;
   }
 
+  #Imgs {
+    max-width: 64rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   main #Branding:nth-child(2) {
     flex-direction: row;
     align-items: center;
@@ -358,6 +363,11 @@ footer {
   .box-imgs {
     max-width: 91.5rem;
     justify-content: space-between;
+  }
+  #Imgs {
+    max-width: 99rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   .Branding-text {
     align-items: start;
